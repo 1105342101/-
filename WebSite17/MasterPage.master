@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"  %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script src="~/JavaScript.js"></script>
+       
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 19px;
+        }
+    </style>
+   
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style4">
+                        <asp:Button ID="Button1" runat="server" BackColor="#99FF66" BorderColor="#666666" BorderStyle="Double" Font-Bold="True" Font-Italic="False" Font-Size="Larger" Font-Strikeout="False" ForeColor="Black" Height="59px" PostBackUrl="Default4.aspx" style="cursor:pointer" Text="理財規劃" Width="163px" />
+                    </td>
+                        
+                    <td class="auto-style3">
+                        <asp:Button ID="Button2" runat="server" BackColor="#FF5050" BorderColor="#666666" BorderStyle="Double" Font-Bold="True" Font-Italic="False" Font-Size="Larger" Font-Strikeout="False" ForeColor="Black" Height="59px" PostBackUrl="Default3.aspx" style="cursor:pointer" Text="投資規劃" Width="163px" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" colspan="2"></td>
+                </tr>
+            </table>
+
+            <br />
+            
+        </div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+        
+
+
+    </form>
+</body>
+</html>
